@@ -12,19 +12,26 @@
 
 <body>
 
+    <!-- Header Section Starts -->
+
     <header class="header">
         <a href="#" class="logo">Portfolio.</a>
 
+        <i class='bx bx-menu' id="menu-icon"></i>
+
         <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Project</a>
-            <a href="#" style="--i:5">Contact</a>
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#project" style="--i:4">Project</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
 
-    <section class="home">
+
+    <!-- Home Section Design Starts -->
+
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Akshay Guna</h1>
@@ -36,20 +43,148 @@
                 <a href="https://join.skype.com/invite/xgC5rkFbfO0o" target="_blank" style="--i:9"><i class='bx bxl-skype' ></i></a>
                 <a href="https://www.instagram.com/akshay__guna/?next=%2F" target="_blank" style="--i:10"><i class='bx bxl-instagram-alt' ></i></a>
             </div>
-            <a href="Resume.pdf" download="Resume.pdf" class="btn">Download CV</a>
+            <a href="Resume.pdf" download="AkshayGuna's Resume.pdf" class="btn">Download CV</a>
         </div>
         <div class="home-image">
             <img src="profile.png" alt="">
         </div>
     </section>
 
+
+    <!-- About Section Design Starts -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="profile.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Web Developer!</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, ipsum, nesciunt veritatis maxime commodi, reprehenderit delectus molestiae neque repellendus omnis adipisci doloremque rem assumenda dolorem illum provident possimus hic
+                nemo ab ipsam id nobis.</p>
+        </div>
+    </section>
+
+
+    <!-- Skills Section Design Starts -->
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bxl-react'></i>
+                <h3>React JS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam accusantium similique ipsam tenetur dolore! Veritatis animi maiores similique aut sit.</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxl-nodejs'></i>
+                <h3>Node JS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam accusantium similique ipsam tenetur dolore! Veritatis animi maiores similique aut sit.</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxl-javascript'></i>
+                <h3>Javascript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam accusantium similique ipsam tenetur dolore! Veritatis animi maiores similique aut sit.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Project Section Design Starts -->
+
+    <section class="project" id="project">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="project-container">
+            <div class="project-box">
+                <img src="image1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere!</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="image1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere!</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="image1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere!</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="image1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere!</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="image1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere!</p>
+                    <a href=""><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="image1.jpg" alt=" ">
+                <div class="project-layer ">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere!</p>
+                    <a href=" "><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact Section Design Starts -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Full NAme">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+
+    <!-- Foorter Section Design Starts -->
+
     <footer class="footer">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright : Portfolio
+        <div class="footer-text">
+            <p>copyright &copy; 2023 by Akshay Guna | All rights reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js "></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
 
