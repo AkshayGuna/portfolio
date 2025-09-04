@@ -66,11 +66,32 @@ ScrollReveal().reveal(".skills-container, .project-box, .contact form", {
 });
 ScrollReveal().reveal(".about-content", { origin: "right" });
 
-// Show loader on send button
-let form = document.querySelector(".contact form");
+// ===== Contact Form with EmailJS =====
+let form = document.querySelector("#contact-form");
 let sendBtn = document.querySelector("#sendBtn");
 
-form.addEventListener("submit", () => {
-  sendBtn.classList.add("loading");
-  sendBtn.value = "Sending..."; // change text while sending
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // stop default form submission
+
+  sendBtn.disabled = true;
+  sendBtn.value = "Sending...";
+
+  emailjs
+    .sendForm("service_m5u8knk", "template_bvy74nm", this)
+    .then(() => {
+      sendBtn.value = "Message Sent ✅";
+      form.reset();
+      setTimeout(() => {
+        sendBtn.disabled = false;
+        sendBtn.value = "Send Message";
+      }, 3000);
+    })
+    .catch((error) => {
+      console.error("FAILED...", error);
+      sendBtn.value = "Failed ❌";
+      setTimeout(() => {
+        sendBtn.disabled = false;
+        sendBtn.value = "Send Message";
+      }, 3000);
+    });
 });

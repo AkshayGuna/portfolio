@@ -133,16 +133,16 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="https://formsubmit.co/680fa63e422b2db62afae499d24ea65c" method="POST">
+        <form id="contact-form">
             <div class="input-box">
-                <input type="text" name="Full Name" id="fname" placeholder="Full Name" required>
-                <input type="email" name="Email" id="email" placeholder="Email Address" required>
+                <input type="text" name="name" id="fname" placeholder="Full Name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" name="Mobile No" id="mno" placeholder="Mobile Number" required>
-                <input type="text" name="Subject" id="esubject" placeholder="Email Subject" required>
+                <input type="number" name="mobile" id="mno" placeholder="Mobile Number" required>
+                <input type="text" name="title" id="esubject" placeholder="Email Subject" required>
             </div>
-            <textarea cols="30" rows="10" name="Message" id="msg" placeholder="Your Message" required></textarea>
+            <textarea cols="30" rows="10" name="message" id="msg" placeholder="Your Message" required></textarea>
             <input type="submit" id="sendBtn" value="Send Message" class="btn">
         </form>
     </section>
@@ -164,6 +164,12 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js "></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("wJTogm1qhyXOx4_c8"); // 👈 paste here
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
 
