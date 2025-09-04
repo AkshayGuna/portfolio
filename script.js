@@ -65,3 +65,12 @@ ScrollReveal().reveal(".skills-container, .project-box, .contact form", {
   origin: "bottom",
 });
 ScrollReveal().reveal(".about-content", { origin: "right" });
+
+// Show loader on send button
+let form = document.querySelector(".contact form");
+let sendBtn = document.querySelector("#sendBtn");
+
+form.addEventListener("submit", () => {
+  sendBtn.classList.add("loading");
+  sendBtn.value = "Sending..."; // change text while sending
+});

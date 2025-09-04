@@ -320,6 +320,10 @@ span {
   color: var(--second-bg-color);
 }
 
+.contact {
+  background: var(--second-bg-color);
+}
+
 .contact h2 {
   margin-bottom: 3rem;
 }
@@ -343,7 +347,7 @@ span {
   padding: 1.5rem;
   font-size: 1.6rem;
   color: var(--text-color);
-  background: var(--second-bg-color);
+  background: var(--bg-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
@@ -357,7 +361,29 @@ span {
 }
 
 .contact form .btn {
+  margin-top: 16px;
   cursor: pointer;
+}
+
+/* Loader animation */
+.btn.loading {
+  position: relative;
+  pointer-events: none; /* disable clicks */
+  opacity: 0.8;
+}
+
+.btn.loading::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  transform: translateY(-50%);
 }
 
 .footer {
@@ -366,7 +392,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 
 .footer-text p {
@@ -569,5 +595,14 @@ span {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
   }
 }
